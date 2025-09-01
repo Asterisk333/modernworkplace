@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+{% include "header.html" %}
+<body>
+<div class="container">
+    <h1>Daily ZL;NG</h1>
+    <p class="lead">Die News von Gestern, das isch mer Z Läng; Nid Gäse</p>
+    <!-- Article block -->
+    {% include "articles.html" %}
+    {% include "footer.html" %}
+</div>
+</body>
+</html>
