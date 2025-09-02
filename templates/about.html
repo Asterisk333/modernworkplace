@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZL;NG About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+{% include "header.html" %}
+<body>
+<div class="container">
+    <h1>About ZL;NG</h1>
+    <p class="lead">Was isch Z Läng; Nid Gäse?</p>
+    <div class="article">
+        <h2>ZLNG</h2>
+        <p>
+            ZLNG (Z Läng; Nid Gäse) ist die schweizerdeutsche Antwort auf <a
+                href="https://www.urbandictionary.com/define.php?term=tl%3Bdr" target="_blank">TLDR</a>
+            (Too Long; Didn’t Read). Eine Plattform für News aus der Schweiz – täglich und wöchentlich kompakt
+            zusammengefasst.
+        </p>
+        <p>
+            Wenn du ein bisschen so tickst wie ich, hast du keine Zeit (oder Lust), ständig auf die
+            Push-Benachrichtigungen von SRF, NZZ oder Watson zu reagieren. Hier bekommst du jeden Tag eine Übersicht
+            über die wichtigsten Ereignisse – mit Fokus auf Schweiz, Politik und Wirtschaft.
+        </p>
+    </div>
+    {% include "footer.html" %}
+</div>
+</body>
+</html>

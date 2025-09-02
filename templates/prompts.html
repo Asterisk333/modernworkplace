@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZL;NG Prompts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+{% include "header.html" %}
+<body>
+<div class="container">
+    <h1>Prompts ZL;NG</h1>
+    <p class="lead">Wie Werde die News zämegfasst?</p>
+    <div class="article">
+        <h2>Daily Prompt</h2>
+        <p>Fasse mir die 5 wichtigsten Nachrichten vom (Zeitraum: [DATUM]) aus der Schweiz zusammen. Verwende
+            ausschliesslich die Rubriken Schweiz, Politik und Wirtschaft auf srf.ch. Filtere alle Klatsch-, Promi-,
+            Sport-, Gossip- oder Lifestyle-Themen konsequent heraus. Struktur: Antworte ausschliesslich mit einem
+            JSON-Array von 5 Objekten. Jedes Objekt muss exakt folgende Felder enthalten: – "title" : 1 Satz, die
+            Überschrift des Themas – "summary" : 4-6 Sätze prägnante, sachliche Zusammenfassung (nur Fakten, keine
+            Wertungen) – "source" : URL zur Quelle Wichtig: Gib nur valides JSON zurück, keine Einleitung, keine
+            Meta-Kommentare, keine Erklärungen, keine Abschlussbemerkungen.</p>
+    </div>
+    <div class="article">
+        <h2>Weekly Prompt</h2>
+        <p>Fasse mir die 5 wichtigsten Nachrichten der letzten Woche(Zeitraum: [KALENDERWOCHE]) aus der Schweiz
+            zusammen. Verwende ausschliesslich die Rubriken Schweiz, Politik und Wirtschaft auf srf.ch. Filtere alle
+            Klatsch-, Promi-, Sport-, Gossip- oder Lifestyle-Themen konsequent heraus. Struktur: Antworte
+            ausschliesslich mit einem JSON-Array von 5 Objekten. Jedes Objekt muss exakt folgende Felder enthalten: –
+            "title" : 1 Satz, die Überschrift des Themas – "summary" : 4-6 Sätze prägnante, sachliche Zusammenfassung
+            (nur Fakten, keine Wertungen) – "source" : URL zur Quelle Wichtig: Gib nur valides JSON zurück, keine
+            Einleitung, keine Meta-Kommentare, keine Erklärungen, keine Abschlussbemerkungen.</p>
+    </div>
+
+    {% include "footer.html" %}
+</div>
+</body>
+</html>

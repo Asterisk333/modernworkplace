@@ -1,6 +1,6 @@
 import slaves as slave
 
-news = slave.fetch_json("news.json")
+news = slave.fetch_json("xWeeklyNews.json")
 
 for article in news:
     print("Titel:", article["title"])

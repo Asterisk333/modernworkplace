@@ -2,5 +2,6 @@
   <nav>
     <a href="{{ url_for('daily') }}" class="{% if request.path == '/daily' %}active{% endif %}">Daily</a>
     <a href="{{ url_for('weekly') }}" class="{% if request.path == '/weekly' %}active{% endif %}">Weekly</a>
+    <a href="{{ url_for('about') }}" class="{% if request.path == '/about' %}active{% endif %}">About</a>
   </nav>
 </header>
